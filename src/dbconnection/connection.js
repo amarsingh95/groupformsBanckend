@@ -21,8 +21,6 @@ const connection=mysql.createConnection(
  const requestQueryHandler=function(queryStr,param) {
     return new Promise((resolve, reject) => {
         connection.query(queryStr,param,(err, results) => {
-            console.log(queryStr)
-            console.log(param)
             if (err) {
                 console.log(err)
                 return reject(error);
