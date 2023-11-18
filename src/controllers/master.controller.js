@@ -30,7 +30,6 @@ const getMaster=async function(query)
 
 const saveUniversity=async function(data)
 {
-    console.log(data?.uname);
     let insertUniuery="INSERT INTO studuniversity SET ?";
     let parmObj={university:data?.uname};
     let result=await requestQueryHandler(insertUniuery,parmObj);
